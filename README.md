@@ -2,6 +2,8 @@
 
 This repository contains simple scripts to train and run predictions for CIFAR-10 using multiple model architectures (SimpleCNN, ResNet18, MobileNetV2). It is designed to be easy to run locally and commit to GitHub.
 
+Models included: ResNet18, MobileNetV2, and a custom DeepNN (SimpleCNN) implemented in `scripts/models.py`.
+
 ## Files added
 - `scripts/models.py` - model definitions and a `get_model(name, num_classes)` helper.
 - `scripts/utils.py` - data transforms, dataloaders and class labels.
