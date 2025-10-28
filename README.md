@@ -12,6 +12,20 @@ Models included: ResNet18, MobileNetV2, and a custom DeepNN (SimpleCNN) implemen
 - `requirements.txt` - Python dependencies.
 - `.gitignore` - recommended ignores.
 
+## Single-image example
+
+You can run single-image classification using `scripts/predict.py`. For a simple visual reference this repo includes a placeholder example image shown below. Replace `assets/example.svg` (or add your own `assets/example.jpg` / `assets/example.png`) when you want to show a real sample.
+
+![Example image](assets/output1.png)
+
+To classify a single image (put it in `./images` or set `--input-folder`):
+
+```powershell
+python .\scripts\predict.py --checkpoint .\models\resnet18_best.pth --input-folder .\images --output predictions.csv --model resnet18 --device cpu
+```
+
+If you prefer passing a single image file path directly, add it to the `images/` folder and the script will process it (one row in `predictions.csv`).
+
 ## Quick start (Windows PowerShell)
 
 1. Create and activate a virtual environment
